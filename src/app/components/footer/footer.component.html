@@ -1,0 +1,25 @@
+<div class="flex flex-wrap justify-between my-10 gap-y-10">
+    <div>
+        <div>
+            <img [src]="logo" alt="site logo" />
+        </div>
+        <h2 class="text-[36px]">One of the best furniture agency.</h2>
+    </div>
+    <div class="gap-y-3 flex flex-col">
+        <div class="flex items-center gap-x-2 text-[18px]">
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="7" cy="7.18237" rx="7" ry="7.00879" fill="#333333"/>
+                </svg>
+            <p>Enter your email to get the latest news</p>
+        </div>
+        <input type="text" placeholder="Email Address" class="border-b w-[100%] py-2 border-transparent focus:border-transparent focus:ring-0 ">
+        <div class="flex flex-col gap-y-2 my-4 justify-items-right ml-auto">
+            <p>Follow us On</p>
+            <p class="flex gap-x-5 items-center">
+                <span class="p-1 rounded-2xl bg-lightGrey" *ngFor="let social of socials">
+                    <img [src]="social" [alt]="socials">
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
